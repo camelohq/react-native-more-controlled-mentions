@@ -9,7 +9,7 @@ exports.defaultTriggerTextStyle = exports.emptyObject = exports.DEFAULT_ALLOWED_
  * - Name - "Full Name"
  * - Id - "123abc"
  */
-const triggerRegEx = /(([^{^}]*)\[([^[]*)]\(([^(^)]*)\))/i;
+const triggerRegEx = /([^{^}]*)\[([^[]*)]\(([^(^)]*)\)/i;
 exports.triggerRegEx = triggerRegEx;
 /**
  * We need this single group regex for using String.prototype.split method

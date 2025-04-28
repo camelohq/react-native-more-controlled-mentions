@@ -8,7 +8,7 @@ import { StyleProp, TextStyle } from 'react-native';
  * - Name - "Full Name"
  * - Id - "123abc"
  */
-const triggerRegEx = /(([^{^}]*)\[([^[]*)]\(([^(^)]*)\))/i;
+const triggerRegEx = /([^{^}]*)\[([^[]*)]\(([^(^)]*)\)/i;
 
 /**
  * We need this single group regex for using String.prototype.split method

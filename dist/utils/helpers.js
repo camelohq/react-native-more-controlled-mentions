@@ -366,7 +366,7 @@ const getTriggerValue = (triggerConfig, suggestion) => {
     if (isCustomTriggerConfig(triggerConfig)) {
         return triggerConfig.getTriggerValue(suggestion);
     }
-    return `{${triggerConfig.trigger}}[${suggestion.name}](${suggestion.id})`;
+    return `${triggerConfig.trigger}[${suggestion.name}](${suggestion.id})`;
 };
 exports.getTriggerValue = getTriggerValue;
 const getTriggerPlainString = (config, triggerData) => {

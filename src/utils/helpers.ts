@@ -518,8 +518,8 @@ const getTriggerValue = (triggerConfig: TriggerConfig, suggestion: Suggestion) =
     return triggerConfig.getTriggerValue(suggestion);
   }
 
-  return `{${triggerConfig.trigger}}[${suggestion.name}](${suggestion.id})`;
-}
+  return `${triggerConfig.trigger}[${suggestion.name}](${suggestion.id})`;
+};
 
 const getTriggerPlainString = (config: TriggerConfig, triggerData: TriggerData) => {
   if (config.getPlainString != null) {
